@@ -5,7 +5,7 @@
 # Definition
 _As applicable for ROS_
 
-A set of configurations, launch files, and scripts that facilitate the startup and initialisation of a robot or a system (software or hardware), ensuring all necessary components are running correctly. The nav2_bringup package is a common example, providing launch files and configurations for the ROS 2 navigation stack, enabling autonomous navigation and control for robots.
+A set of configurations, launch files, and scripts that facilitate the startup and initialisation of a robot or a system (software or hardware), ensuring all necessary components are running correctly. The `nav2_bringup` package is a common example, providing launch files and configurations for the ROS 2 navigation stack, enabling autonomous navigation and control for robots.
 
 > **References**:
 >
