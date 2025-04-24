@@ -38,7 +38,7 @@
 - Implements machine-to-machine data and control transfer
 - Provides services for robotics systems
 
-\* _Specifically, [ROS 2 uses DDS as its middleware](./dds-in-ros2.md)._
+\* _Specifically, [ROS 2 uses DDS as its middleware](./info-docs/dds-in-ros2.md)._
 
 ---
 
