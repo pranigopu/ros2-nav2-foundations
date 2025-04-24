@@ -28,7 +28,7 @@
 > **Reference course**: [_ROS 2 Nav2 [Navigation 2 Stack] - with SLAM and Navigation_, **udemy.com**](https://www.udemy.com/course/ros2-nav2-stack)
 
 # About ROS 2
-> **Docs**: (docs.ros.org)[https://docs.ros.org/]
+> **Docs**: [docs.ros.org](https://docs.ros.org/)
 
 - Robot Operating System (ROS) is NOT an OS
 - Utilises but expands upon middleware functionality\*
