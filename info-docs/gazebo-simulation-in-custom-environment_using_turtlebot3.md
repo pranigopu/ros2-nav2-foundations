@@ -64,15 +64,34 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations .
 
 **NOTE**: _The final dot refers to the current directory `src`_
 
+
 ---
 
-**3. Add custom files/source code where necessary**:
+**3. Switch the the `humble` branch**:
+
+(_Assuming our ROS 2 distribution is Humble_)
+
+Within `src`, do:
+
+```
+git checkout humble
+```
+
+This switches the repository branch from `main` to `humble`.
+
+_Why is it necessary?_
+
+To ensure source files are appropriate for ROS 2 Humble.
+
+---
+
+**4. Add custom files/source code where necessary**:
 
 See ["Adding required files in custom Turtlebot3 workspace"](#adding-required-files-in-custom-turtlebot3-workspace).
 
 ---
 
-**4. Build packages from `src`**:
+**5. Build packages from `src`**:
 
 In `~/my_turtlebot3_workspace`, run:
 
@@ -86,7 +105,7 @@ This builds the packages defined in `src`.
 
 ---
 
-**5. Source the installation setup script for the build**:
+**6. Source the installation setup script for the build**:
 
 <u>OPTION 1</u>: Source in current terminal session:
 
