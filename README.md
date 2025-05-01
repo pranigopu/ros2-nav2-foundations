@@ -202,7 +202,7 @@ _Navigation needs a static map, no matter the mapping technique._
 ## Nav2-related
 - [Nav2 Stack Overview](./info-docs/nav2-stack-overview.md)
 - [Nav2 for Custom Robot](./info-docs/nav2-for-custom-robot.md)
-- [Gazebo Simulation in Custom Environment Using Turtlebot3](./info-docs/gazebo-simulation-in-custom-environment-using-turtlebot3.md)
+- [Gazebo Simulation in Custom Environment Using Turtlebot3](./info-docs/gazebo-simulation-in-custom-environment_using_turtlebot3.md)
 
 ## Procedure outlines
 - [Navigation Steps Using Turtlebot3 Nav2](./info-docs/procedure-outlines/navigation-steps-using-turtlebot3-nav2.pdf)
