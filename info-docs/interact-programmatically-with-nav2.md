@@ -4,6 +4,12 @@
 
 **Contents**:
 
+- [Exploring Nav2-related topics and actions](#exploring-nav2-related-topics-and-actions)
+- [Nav2 simple commander API](#nav2-simple-commander-api)
+	- [Purpose](#purpose)
+	- [Installation](#installation)
+	- [Installations for facilitating custom Python scripting](#installations-for-facilitating-custom-python-scripting)
+
 ---
 
 # Exploring Nav2-related topics and actions
@@ -98,9 +104,7 @@ sudo apt install ros-humble-nav2-simple-commander
 
 **NOTE**: *It should have been installed when installing Nav2.*
 
-## Installations for facilitating custom scripting
-***Considering only Python script creation here***
-
+## Installations for facilitating custom Python scripting
 ### `tf-transformations`
 - Reimplementation of `tf/transformations.py` library
 - For common Python spatial operations (e.g. Euler-quaternion conversions)
