@@ -110,7 +110,25 @@ E.g.: Using Turtlebot3 (but you can use any robot stack):
 
 Replace `...` with launch file for desired simulated environment.
 
-**NOTE**:
+**Turtlebot3-specific requirement**:
+
+Specify the desired Turtlebot3 URDF model to be used:
+
+This is done by exporting the environment variable `TURTLEBOT3_MODEL` as follows:
+
+```
+export TURTLEBOT3_MODEL=... # replace ... with a valid URDF model name, e.g. "waffle"
+```
+
+Not doing this leads to the following exception when launching Turtlebot3 Gazebo simulations:
+
+```
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): 'TURTLEBOT3_MODEL'
+```
+
+**NOTE**: *Place this command in `~/.bashrc` to ensure this variable is exported for every terminal session.*
+
+**KEY POINT**:
 
 - To allow for SLAM and obstacle avoidance, ensure: <br> `LaserScan` message is being piublished in the `/scan` topic
 

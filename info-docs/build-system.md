@@ -128,3 +128,25 @@ It automates the process by:
 ---
 
 **Reference**: [colcon - collective construction (official doc)](https://colcon.readthedocs.io/en/released/)
+
+---
+
+**Installing `colcon` (Linux)**:
+
+```sh
+# Adding the ROS 2 Ubuntu repository in the list of sources to access relevant packages for installation:
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://repo.ros2.org/ubuntu/main `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+# Obtaining the key that ensures the the material in the ROS 2 repositories are authentic:
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+# NOTE:
+# - The above are not necessary to do if you have already done ROS 2 binary installations
+# - This is because the above would have already been done during those installations
+
+# Updating the source repositories (to account for new packages/modifications) and upgrading existing installations: 
+sudo apt update && sudo apt upgrade
+
+# Installing colcon
+sudo apt install python3-colcon-core # Enables core functionality
+sudo apt install python3-colcon-common-extensions # Enables compilation progress visual display, among other things
+```

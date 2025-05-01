@@ -62,8 +62,19 @@ An easy way to do this is navigate to `src` and do:
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations .
 ```
 
-**NOTE**: _The final dot refers to the current directory `src`_
+**NOTE**: _The final dot refers to the current directory `src`._
 
+**IMPORTANT SUB-STEP**:
+
+The `turtlebot3_simulations` repo does not have all the dependencies needed by Turtlebot3 simulation packages, e.g. ROS 2 Gazebo-related packages to help run robotics simulations. Not having these dependencies means the custom Turtlebot3 simulation packages cannot be built due to compilation errors (due to missing dependencies). To ensure that these dependencies are available, first obtain the binary installations of Turtlebot3-related packages compatible with the ROS 2 distribution being used; in my case, as I am using ROS 2 Humble, this step looks like:
+
+```
+sudo apt install ros-humble-turtlebot3* # * means all packages with names starting with "ros-humble-turtlebot3" must be installed
+```
+
+This step automatically installs the necessary dependencies.
+
+*Make sure to source this installation; doing so is not needed if you are already sourcing your binary ROS 2 installations.*
 
 ---
 
@@ -79,9 +90,12 @@ git checkout humble
 
 This switches the repository branch from `main` to `humble`.
 
-_Why is it necessary?_
+***Why is it necessary?***
 
-To ensure source files are appropriate for ROS 2 Humble.
+- To ensure source files are compatible with ROS 2 Humble
+- To ensure already-installed ROS 2 Humble binary installations can be used as dependencies
+
+*Not doing this could lead to compilation errors.*
 
 ---
 
@@ -113,7 +127,7 @@ This builds the packages defined in `src`.
 source ~/my_turtlebot3_workspace/install/setup.bash
 ```
 
-Overrides existing Turtlebot3 installation in current session.
+Overlays existing Turtlebot3 installation in current session.
 
 <u>OPTION 2</u>: Source in `.bashrc`:
 
@@ -124,6 +138,24 @@ Overrides existing Turtlebot3 installation in current session.
 - Run `source ~/.bashrc` to apply changes in current session <br> _For new sessions, this file is automatically sourced_
 
 > **For more on source command in Linux**: [_Source Command in Linux_](./source-command-in-linux.md)
+
+---
+
+**7. Specify the desired Turtlebot3 URDF model to be used**:
+
+This is done by exporting the environment variable `TURTLEBOT3_MODEL` as follows:
+
+```
+export TURTLEBOT3_MODEL=... # replace ... with a valid URDF model name, e.g. "waffle"
+```
+
+Not doing this leads to the following exception when launching Turtlebot3 Gazebo simulations:
+
+```
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): 'TURTLEBOT3_MODEL'
+```
+
+**NOTE**: *Place this command in `~/.bashrc` to ensure this variable is exported for every terminal session.*
 
 # Adding required files in custom Turtlebot3 workspace
 **NOTE**: _Do this before building the custom Turtlebot3 packages._
