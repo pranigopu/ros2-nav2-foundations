@@ -9,6 +9,9 @@
 	- [Purpose](#purpose)
 	- [Installation](#installation)
 	- [Installations for facilitating custom Python scripting](#installations-for-facilitating-custom-python-scripting)
+	- [Examples](#examples)
+		- [Setting initial pose](#setting-initial-pose)
+		- [Setting initial and goal poses](#setting-initial-and-goal-poses)
 
 ---
 

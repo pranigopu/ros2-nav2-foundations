@@ -2,7 +2,7 @@
 
 # NOTE: The above indicates a CLI command, indicating the following code must be run as an executable
 
-# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER
+# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER: SET INITIAL POSE (I.E. INITIAL POSE ESTIMATE)
 
 # Import rclpy, the canonical Python API for interacting with ROS 2:
 import rclpy # NOTE: rcl => "ROS Client Library"
