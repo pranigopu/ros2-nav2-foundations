@@ -195,6 +195,11 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 ![](../media/after-setting-initial-pose-at-origin.png)
 
 ### Setting initial and goal poses
+- Set initial pose estimate
+- Set goal pose
+
+---
+
 **Code**:
 
 See [`set_initial_and_goal_poses.py`](../scripts/set_initial_and_goal_poses.py)
@@ -211,4 +216,6 @@ See [`set_initial_and_goal_poses.py`](../scripts/set_initial_and_goal_poses.py)
 
 **Key consideration**:
 
-Ensure the initial pose is roughly 
+Ensure the initial pose estimate is roughly where the robot is positioned.
+
+*Otherwise, robot may fail to localise and navigation would be erroneous.*
