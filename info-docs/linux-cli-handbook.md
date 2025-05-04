@@ -36,3 +36,12 @@ See [`source` Command in Linux](./source-command-in-linux) for more.
 - `source ~/.bashrc`
 	- `.bashrc` is a bash script executed at the start of new terminal session
 	- It is stored in the home directory, referred to by `~/`
+	
+# Preventing outputs from script
+> **References**:
+>
+> - [*Preventing Terminal Print from Bash Scripts in Linux*, **squash.io**](https://www.squash.io/preventing-terminal-print-from-bash-scripts-in-linux/)
+> - [*What is /Dev/Null in Linux?*, **GeeksForGeeks.org**](https://www.geeksforgeeks.org/what-is-dev-null-in-linux/)
+
+# `head` and `tail` commands
+> **Reference**: [*The head and tail commands in Linux*, **Baeldung.com**](https://www.baeldung.com/linux/head-tail-commands)
