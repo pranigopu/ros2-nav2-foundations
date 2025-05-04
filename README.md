@@ -6,16 +6,8 @@
 
 - [About ROS 2](#about-ros-2)
 - [About Navigation2 (Nav2)](#about-navigation2-nav2)
-- [ROS 2 Humble](#ros-2-humble)
-- [ROS 2 installation (Humble)](#ros-2-installation-humble)
-- [Nav2 stack installation and related installations](#nav2-stack-installation-and-related-installations)
-  - [Preliminary points](#preliminary-points)
-  - [Packages to install](#packages-to-install)
-- [Other useful ROS 2 installations](#other-useful-ros-2-installations)
-  - [Turtlebot3](#turtlebot3)
-  - [URDF Tutorial](#urdf-tutorial)
-  - [SLAM Toolbox](#slam-toolbox)
-- [ROS 2 command line](#ros-2-command-line)
+- [About ROS 2 Humble](#about-ros-2-humble)
+- [Installation and setup](#installation-and-setup)
 - [Division of navigation-related operations](#division-of-navigation-related-operations)
 - [Further reading](#further-reading)
   - [Linux and ROS 2 related](#linux-and-ros-2-related)
@@ -26,6 +18,13 @@
 ---
 
 > **Reference course**: [_ROS 2 Nav2 [Navigation 2 Stack] - with SLAM and Navigation_, **udemy.com**](https://www.udemy.com/course/ros2-nav2-stack)
+
+---
+
+**Abbreviations**:
+
+- RMW = ROS Middleware
+- URDF = Unified Robot Description Format
 
 # About ROS 2
 > **Docs**: [docs.ros.org](https://docs.ros.org/)
@@ -75,7 +74,7 @@ A stack designed for robot navigation, built upon ROS 2.
 
 **NOTE**: Stack = Collection of purpose-specific packages
 
-# ROS 2 Humble
+# About ROS 2 Humble
 A distribution of ROS 2 that is:
 
 - Well-established and stable (since 2022)
@@ -83,64 +82,10 @@ A distribution of ROS 2 that is:
 
 For the above reasons, it has been chosen.
 
-**NOTE**: _Learnings in one distribution are transferrable._
+**NOTE**: *Learnings in one distribution are transferrable.*
 
-# ROS 2 installation (Humble)
-[Ubuntu (deb packages), **docs.ros.org**](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
-
-# Nav2 stack installation and related installations
-## Preliminary points
-- `sudo apt update` (updates packages available in repositories)
-- `sudo apt install ...` (installs specified packages)
-
-## Packages to install
-**NOTE**: Understanding what must be installed and why helps:
-
-- Setup the entire ecosystem necessary for smooth operations
-- Navigate installations for debugging/exploration
-
----
-
-The Nav2 stack and its "bringup" system:
-
-- `ros-humble-navigation2`
-- `ros-humble-nav2-bringup`
-    - A set of configurations, launch files, and scripts
-    - Faciltates the startup and initialisation of Navigation2 <br> _For the given map/robots/hardware_
-
-> **Read more on `nav2-bringup`**: [_Nav2-bringup_, **Qualcomm.com**](https://docs.qualcomm.com/bundle/publicresource/topics/80-70015-265/nav2-bringup_5_2_1.html)
-
-# Other useful ROS 2 installations
-## Turtlebot3
-Mobile robot definitions with complete simulation (for testing):
-
-`ros-humble-turtlebot3*`
-
-**NOTE**: _`*` indicates that all Turtlebot3 dependencies must be installed._
-
-## URDF Tutorial
-Visualisation and easy customisation of URDF files (for robot modelling):
-
-`ros-humble-urdf-tutorial`
-
-## SLAM Toolbox
-SLAM functionality for any robot:
-
-`ros-humble-slam-toolbox`
-
----
-
-**NOTE**: This package has a requirement:
-
-_Laser scan must be published on the `/scan` topic._
-
-# ROS 2 command line
-Before running any ROS command, you must source the workspace.
-
-> **References**:
->
-> - ["Usage in enabling ROS 2 command line", Source Command in Linux](./source-command-in-linux.md#usage-in-enabling-ros-2-command-line)
-> - ["5.2. Bring up the TurtleBot", _ROS 2 Turtlebot_, **ROS 2 Workshop**](https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Turtlebot.html#bring-up-the-turtlebot)
+# Installation and setup
+See [`info-docs`/`installation-and-setup`](./info-docs/installation-and-setup/)
 
 # Division of navigation-related operations
 Navigation involves 2 key steps:
@@ -173,7 +118,7 @@ Hence, a less computationally heavy\* and more stable approach:
     - Global path planning
     - Global pose estimation
 
-\* _As SLAM requires intensive logic to append map data correctly._
+\* *As SLAM requires intensive logic to append map data correctly.*
 
 ---
 
