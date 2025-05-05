@@ -4,12 +4,13 @@
 
 **Contents**:
 
-- [ROS 2 Humble installation and environment setup](#ros2-humble-installation-and-environment-setup)
+- [ROS 2 Humble installation and environment setup](#ros-2-humble-installation-and-environment-setup)
 	- [Binary installation](#binary-installation)
 	- [Building from source](#building-from-source)
 	- [Compatible OS for ROS Humble installation](#compatible-os-for-ros-humble-installation)
 - [Suggested DDS implementation for Nav2](#suggested-dds-implementation-for-nav2)
-- [Installing relevant ROS 2 packages](#installing-relevant-ros-2-packages)	
+- [Installing relevant ROS 2 packages](#installing-relevant-ros-2-packages)
+- [ROS 2 command line](#ros-2-command-line)
 
 ---
 
@@ -33,7 +34,7 @@ WHY INSTALL THIS: *Comes bundled with ROS, RViz, demos and tutorials.*
 
 **Shell script to automate installation:**
 
-[ROS Humble Desktop Installation - Shell Script](./ros-humble-desktop-installation.sh)
+[ROS Humble Desktop Installation - Shell Script](../../scripts/installation-and-setup/ros-humble-desktop-installation.sh)
 
 ***For Linux ; replace `...` with script path***
 
@@ -49,7 +50,7 @@ Building ROS from source is done using the steps outlined here:
 
 **Shell script to partially automate setup**:
 
-[ROS Humble Build from Source - Shell Script](./ros-humble-build-from-source.sh)
+[ROS Humble Build from Source - Shell Script](../../scripts/installation-and-setup/ros-humble-build-from-source.sh)
 
 ***For Linux ; replace `...` with script path***
 

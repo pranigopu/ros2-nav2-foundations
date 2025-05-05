@@ -9,6 +9,8 @@
 	- [Purpose](#purpose)
 	- [Installation](#installation)
 	- [Installations for facilitating custom Python scripting](#installations-for-facilitating-custom-python-scripting)
+		- [`tf-transformations`](#tf-transformations)
+		- [`python3-transforms3d`](#python3-transforms3d)
 	- [Examples](#examples)
 		- [Setting initial pose](#setting-initial-pose)
 		- [Setting initial and goal poses](#setting-initial-and-goal-poses)
@@ -166,7 +168,7 @@ For each example, the following processes were run (in separate terminals):
 
 **Code**:
 
-See [`set_initial_pose.py`](../scripts/set_initial_pose.py)
+See [`set_initial_pose.py`](../scripts/interact-programmatically-with-nav2/set_initial_pose.py)
 
 *In WSL, the above was saved in `~/ros2_scripts/`.*
 
@@ -205,7 +207,7 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 **Code**:
 
-See [`set_initial_and_goal_poses.py`](../scripts/set_initial_and_goal_poses.py)
+See [`set_initial_and_goal_poses.py`](../scripts/interact-programmatically-with-nav2/set_initial_and_goal_poses.py)
 
 *In WSL, the above was saved in `~/ros2_scripts/`.*
 
