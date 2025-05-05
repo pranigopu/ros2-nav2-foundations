@@ -1,94 +1,21 @@
-<h1>INTERACT PROGRAMMATICALLY WITH NAV2</h1>
+<h1>NAV2 SIMPLE COMMANDER API</h1>
 
 ---
 
 **Contents**:
 
-- [Exploring Nav2-related topics and actions](#exploring-nav2-related-topics-and-actions)
-- [Nav2 simple commander API](#nav2-simple-commander-api)
-	- [Purpose](#purpose)
-	- [Installation](#installation)
-	- [Installations for facilitating custom Python scripting](#installations-for-facilitating-custom-python-scripting)
-		- [`tf-transformations`](#tf-transformations)
-		- [`python3-transforms3d`](#python3-transforms3d)
-	- [Examples](#examples)
-		- [Setting initial pose](#setting-initial-pose)
-		- [Setting initial and goal poses](#setting-initial-and-goal-poses)
+- [Purpose](#purpose)
+- [Installation](#installation)
+- [Installations for facilitating custom Python scripting](#installations-for-facilitating-custom-python-scripting)
+	- [`tf-transformations`](#tf-transformations)
+	- [`python3-transforms3d`](#python3-transforms3d)
+- [Examples](#examples)
+	- [Setting initial pose](#setting-initial-pose)
+	- [Setting initial and goal poses](#setting-initial-and-goal-poses)
 
 ---
 
-# Exploring Nav2-related topics and actions
-The following topics and actions were explored with the following running processes:
-
-**Terminal 1: Gazebo simulation**:
-
-```sh
-ros2 launch turtlebot3_gazebo turtlebot3_design_lab.launch.py
-```
-
-**Terminal 2: Navigation2 bringup launcher**:
-
-```sh
-cd ~/maps # Contains .pgm and .yaml files for LiDAR-generated environment maps
-ros2 launch nav2_bringup bringup.launch.py use_sim_time:=True map:=design-lab-via-slam.yaml
-```
-
-**Terminal 3: RViz2 for visualisation**:
-
-```
-ros2 run rviz2 rviz2
-```
-
----
-
-The following data were gathered in terminal 4:
-
-**Information on `/initialpose` topic**:
-
-```
-$ ros2 topic info /initialpose
-
-Type: geometry_msgs/msg/PoseWithCovarianceStamped
-Publisher count: 1
-Subscription count: 1
-```
-
-**Information on available actions**:
-
-```
-$ ros2 action list
-
-/assisted_teleop
-/backup
-/compute_path_through_poses
-/compute_path_to_pose
-/drive_on_heading
-/follow_path
-/follow_waypoints
-/navigate_through_poses
-/navigate_to_pose
-/smooth_path
-/spin
-/wait
-```
-
-**Information on `navigate_to_pose` action**:
-
-```
-$ ros2 action info /navigate_to_pose
-
-Action: /navigate_to_pose
-Action clients: 4
-    /bt_navigator
-    /waypoint_follower
-    /rviz
-    /rviz_navigation_dialog_action_client
-Action servers: 1
-    /bt_navigator
-```
-
-# Nav2 simple commander API
-## Purpose
+# Purpose
 Facilitates the process of (programmatically):
 
 - Creating publishers for certain topics (e.g. `/initialpose`)
@@ -96,7 +23,7 @@ Facilitates the process of (programmatically):
 
 *Acts as an interface between custom programs and Nav2 stack.*
 
-## Installation
+# Installation
 ```
 sudo apt install ros-<distro>-nav2-simple-commander # Replace <distro> with the name of your ROS 2 distribution
 ```
@@ -109,8 +36,8 @@ sudo apt install ros-humble-nav2-simple-commander
 
 **NOTE**: *It should have been installed when installing Nav2.*
 
-## Installations for facilitating custom Python scripting
-### `tf-transformations`
+# Installations for facilitating custom Python scripting
+## `tf-transformations`
 - Reimplementation of `tf/transformations.py` library
 - For common Python spatial operations (e.g. Euler-quaternion conversions)
  
@@ -122,7 +49,7 @@ Install using:
 sudo apt install ros-humble-tf-transformations # For ROS 2 Humble distribution
 ```
 
-### `python3-transforms3d`
+## `python3-transforms3d`
 Code to convert between various geometric transformations:
 
 - Composing rotations / zooms / shears / translations into affine matrix
@@ -148,7 +75,7 @@ Alternatively, you can do:
 pip install transforms3d
 ```
 
-## Examples
+# Examples
 For each example, the following processes were run (in separate terminals):
 
 - `ros2 launch turtlebot3_gazebo turtlebot3_design_lab.launch.py` <br> *You can replace this launch file with your preferred\**
@@ -157,7 +84,7 @@ For each example, the following processes were run (in separate terminals):
 
 \* *See [Gazebo Simulation in Custom Environment](./gazebo-simulation-in-custom-environment_using_turtlebot3.md) for more details.*
 
-### Setting initial pose
+## Setting initial pose
 - Set the initial pose estimate
 - The localiser uses this as a first guess to localise the agent
 - Hence, ensure the initial pose estimate is roughly where the agent is
@@ -199,7 +126,7 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 ![](../media/after-setting-initial-pose-at-origin.png)
 
-### Setting initial and goal poses
+## Setting initial and goal poses
 - Set initial pose estimate
 - Set goal pose
 

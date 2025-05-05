@@ -10,7 +10,7 @@
 - [Installation and setup](#installation-and-setup)
 - [Division of navigation-related operations](#division-of-navigation-related-operations)
 - [Further reading](#further-reading)
-  - [Linux and ROS 2 related](#linux-and-ros-2-related)
+  - [Linux and ROS 2-related](#linux-and-ros-2-related)
   - [Nav2-related](#nav2-related)
   - [Procedure outlines](#procedure-outlines)
   - [Associated research](#associated-research)
@@ -134,6 +134,7 @@ _Navigation needs a static map, no matter the mapping technique._
 - [Source Command in Linux](./info-docs/source-command-in-linux.md) <br> _Also discusses_...
     - Setting up ROS 2 command line commands
     - Running ROS 2 nodes/packages
+- [ROS Core Concepts](./info-docs/ros-core-concepts.md)
 - [ROS Workspace](./info-docs/ros-workspace.md)
 - [ROS Package](./info-docs/ros-package.md)
 - [Build System](./info-docs/build-system.md) <br> _Also discusses_...
@@ -148,7 +149,8 @@ _Navigation needs a static map, no matter the mapping technique._
 - [Nav2 Stack Overview](./info-docs/nav2-stack-overview.md)
 - [Nav2 for Custom Robot](./info-docs/nav2-for-custom-robot.md)
 - [Gazebo Simulation in Custom Environment Using Turtlebot3](./info-docs/gazebo-simulation-in-custom-environment-using-turtlebot3.md)
-- [Interact Programmatically with Nav2](./info-docs/interact-programmatically-with-nav2.md)
+- [Explore Nav2-Related Topics and Actions](./info-docs/nav2-related-topics-and-actions.md)
+- [Interact Programmatically with Nav2](./info-docs/interact-programmatically-with-nav2/)
 
 ## Procedure outlines
 - [Navigation Steps Using Turtlebot3 Nav2](./info-docs/procedure-outlines/navigation-steps-using-turtlebot3-nav2.pdf)
