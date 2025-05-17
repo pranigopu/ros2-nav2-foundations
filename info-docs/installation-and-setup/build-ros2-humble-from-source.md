@@ -103,7 +103,7 @@ git clone --recursive https://github.com/orocos-toolchain/orocos_toolchain.git
 
 Now, you will get `orocos_toolchain` within your workspace.
 
-**NOTE**: *`--recursive` option is used to update\* submodules recursively.*
+**NOTE**: *`--recursive` option is used to update submodules recursively.*
 
 2.<br>
 Set the correct GCC and G++ versions.
@@ -148,7 +148,7 @@ source .../orocos_toolchain/setup.sh
 
 *Replace `...` with the workspace's path.*
 
-**NOTE**: *To ensure it has execution permissions, do `chmod -x setup.sh`.
+**NOTE**: *To ensure it has execution permissions, do `chmod -x setup.sh`.*
 
 To set it up for every terminal session, add the following to `~/.bashrc`:
 
