@@ -61,7 +61,7 @@ Code to convert between various geometric transformations:
 
 > **Reference**: [`transforms3d 0.4.2`, **pypi.org**](https://pypi.org/project/transforms3d/)
 
-**SIDE NOTE**: **"Affinity" is a geometric transformation that preserves lines and parallelism.*
+**SIDE NOTE**: *"Affinity" is the property of a geometric transformation preserving lines and parallelism.*
 
 Install using:
 
