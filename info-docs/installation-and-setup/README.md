@@ -44,7 +44,7 @@ WHY INSTALL THIS: *Comes bundled with ROS, RViz, demos and tutorials.*
 ## Building from source
 Building ROS from source is done using the steps outlined here:
 
-[Build ROS 2 Humble from Source](./build-ros2-humble-from-source)
+[Build ROS 2 Humble from Source](./build-ros2-humble-from-source.md)
 
 ---
 
