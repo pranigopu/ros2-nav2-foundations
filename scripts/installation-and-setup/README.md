@@ -4,8 +4,8 @@
 
 **Scripts**:
 
-- [`ros-humble-desktop-installation.sh`](./installation-and-setup/ros-humble-desktop-installation.sh) <br> *Binary installation bundled with common ROS 2 tools*
-- [`ros-humble-build-from-source.sh`](./installation-and-setup/ros-humble-build-from-source.sh) <br> *Building ROS 2 Humble from source files*
+- [`ros-humble-desktop-installation.sh`](./ros-humble-desktop-installation.sh) <br> *Binary installation bundled with common ROS 2 tools*
+- [`ros-humble-build-from-source.sh`](./ros-humble-build-from-source.sh) <br> *Building ROS 2 Humble from source files*
 
 **Associated information**:
 
