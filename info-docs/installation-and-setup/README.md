@@ -36,10 +36,12 @@ WHY INSTALL THIS: *Comes bundled with ROS, RViz, demos and tutorials.*
 
 [ROS Humble Desktop Installation - Shell Script](../../scripts/installation-and-setup/ros-humble-desktop-installation.sh)
 
-***For Linux ; replace `...` with script path***
+***For Linux...***
 
 - To give execution permission, do `chmod +x ...`
-- To run, do `./...` 
+- To run, do `./...`
+
+**NOTE**: *Replace `...` with script path.*
 
 ## Building from source
 Building ROS from source is done using the steps outlined here:
@@ -52,10 +54,12 @@ Building ROS from source is done using the steps outlined here:
 
 [ROS Humble Build from Source - Shell Script](../../scripts/installation-and-setup/ros-humble-build-from-source.sh)
 
-***For Linux ; replace `...` with script path***
+***For Linux...***
 
 - To give execution permission, do `chmod +x ...`
-- To run, do `./...` 
+- To run, do `./...`
+
+**NOTE**: *Replace `...` with script path.*
 
 ## Compatible OS for ROS Humble installation
 As of 2025-04-29:
