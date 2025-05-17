@@ -95,7 +95,7 @@ For each example, the following processes were run (in separate terminals):
 
 **Code**:
 
-See [`set_initial_pose.py`](../scripts/interact-programmatically-with-nav2/set_initial_pose.py)
+See [`set_initial_pose.py`](../../scripts/interact-programmatically-with-nav2/set_initial_pose.py)
 
 *In WSL, the above was saved in `~/ros2_scripts/`.*
 
@@ -120,11 +120,11 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 *Before setting initial pose at origin*...
 
-![](../media/before-setting-initial-pose-at-origin.png)
+![](../../media/before-setting-initial-pose-at-origin.png)
 
 *After setting initial pose at origin*...
 
-![](../media/after-setting-initial-pose-at-origin.png)
+![](../../media/after-setting-initial-pose-at-origin.png)
 
 ## Setting initial and goal poses
 - Set initial pose estimate
@@ -134,15 +134,15 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 **Code**:
 
-See [`set_initial_and_goal_poses.py`](../scripts/interact-programmatically-with-nav2/set_initial_and_goal_poses.py)
+See [`set_initial_and_goal_poses.py`](../../scripts/interact-programmatically-with-nav2/set_initial_and_goal_poses.py)
 
 *In WSL, the above was saved in `~/ros2_scripts/`.*
 
 **Visual outputs**:
 
-![](../media/navigation-after-setting-initial-and-goal-poses--1.png)
+![](../../media/navigation-after-setting-initial-and-goal-poses--1.png)
 
-![](../media/navigation-after-setting-initial-and-goal-poses--2.png)
+![](../../media/navigation-after-setting-initial-and-goal-poses--2.png)
 
 ---
 
