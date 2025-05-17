@@ -4,8 +4,8 @@
 
 **Scripts**:
 
-- [`set_initial_pose.py`](./interact-programmatically-with-nav2/set_initial_pose.py) <br> *Sets initial pose estimate*
-- [`set_initial_and_goal_poses.py`](./interact-programmatically-with-nav2/set_initial_and_goal_poses.py) <br> *Sets initial pose estimate and goal pose*
+- [`set_initial_pose.py`](./set_initial_pose.py) <br> *Sets initial pose estimate*
+- [`set_initial_and_goal_poses.py`](./set_initial_and_goal_poses.py) <br> *Sets initial pose estimate and goal pose*
 
 **Associated information**:
 
