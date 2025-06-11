@@ -2,7 +2,7 @@
 
 # NOTE: The above indicates a CLI command, indicating the following code must be run as an executable
 
-# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER: SET INITIAL AND GOAL POSES
+# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER
 
 # Import rclpy, the canonical Python API for interacting with ROS 2:
 import rclpy # NOTE: rcl => "ROS Client Library"
@@ -13,13 +13,12 @@ from geometry_msgs.msg import PoseStamped
 import tf_transformations as tft
 
 #================================================
-# Initialisation
+# Initialisation:
 rclpy.init()
 nav = BasicNavigator()
 
 #================================================
-# Set initial pose
-
+# Set initial pose:
 initial_pose = PoseStamped()
 initial_pose.header.frame_id =  "map"
 initial_pose.header.stamp = nav.get_clock().now().to_msg()
@@ -40,8 +39,7 @@ nav.setInitialPose(initial_pose)
 nav.waitUntilNav2Active()
 
 #================================================
-# Set goal pose
-
+# Set goal pose:
 goal_pose = PoseStamped()
 goal_pose.header.frame_id =  "map"
 goal_pose.header.stamp = nav.get_clock().now().to_msg()
@@ -62,7 +60,7 @@ nav.goToPose(goal_pose)
 KEY POINTS:
 - The above method will only set the goal pose
 - It will not wait until navigation to this goal is complete
-- Hence, we use the following loop
+- Hence, we use the subsequent loop
 '''
 
 #================================================
@@ -70,12 +68,11 @@ KEY POINTS:
 # NOTE: # Task Complete => Successful/Aborted/Failed
 
 while not nav.isTaskComplete():
-    # EXTRA: Get current poses of the robot across time:
     feedback = nav.getFeedback()
     # NOTE: The above gets PoseStamped message of current pose of navigating agent
     print(feedback)
 
-# EXTRA: Print the result of the navigation:
+# Get the pending action result message:
 print(nav.getResult())
 
 #================================================

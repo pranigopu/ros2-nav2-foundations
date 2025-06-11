@@ -11,7 +11,8 @@
 	- [`python3-transforms3d`](#python3-transforms3d)
 - [Examples](#examples)
 	- [Setting initial pose](#setting-initial-pose)
-	- [Setting initial and goal poses](#setting-initial-and-goal-poses)
+	- [Setting initial pose and goal pose](#setting-initial-pose-and-goal-pose)
+	- [Setting initial pose and waypoints](#setting-initial-pose-and-waypoints)
 
 ---
 
@@ -79,7 +80,7 @@ pip install transforms3d
 For each example, the following processes were run (in separate terminals):
 
 - `ros2 launch turtlebot3_gazebo turtlebot3_design_lab.launch.py` <br> *You can replace this launch file with your preferred\**
-- `ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True map:=./maps/design-lab-via-slam.yaml` <br> *You can replace this map path with your preferred\**
+- `ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True map:=~/maps/design-lab-via-slam.yaml` <br> *You can replace this map path with your preferred\**
 - `ros2 run rviz2 rviz2`
 
 \* *See [Gazebo Simulation in Custom Environment](./gazebo-simulation-in-custom-environment_using_turtlebot3.md) for more details.*
@@ -102,7 +103,7 @@ See [`set_initial_pose.py`](../../scripts/interact-programmatically-with-nav2/se
 **Terminal output**:
 
 ```
-$ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
+$ ~/ros2_scripts/./set_initial_pose.py
 [INFO] [1746379797.875792906] [basic_navigator]: Publishing Initial Pose
 [INFO] [1746379801.045427463] [basic_navigator]: Setting initial pose
 [INFO] [1746379801.046665229] [basic_navigator]: Publishing Initial Pose
@@ -126,7 +127,7 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 ![](../../media/after-setting-initial-pose-at-origin.png)
 
-## Setting initial and goal poses
+## Setting initial pose and goal pose
 - Set initial pose estimate
 - Set goal pose
 
@@ -134,15 +135,15 @@ $ ~/ros2_scripts/./test_for_nav2_simple_commander_api.py
 
 **Code**:
 
-See [`set_initial_and_goal_poses.py`](../../scripts/interact-programmatically-with-nav2/set_initial_and_goal_poses.py)
+See [`set_initial_pose_and_goal_pose.py`](../../scripts/interact-programmatically-with-nav2/set_initial_pose_and_goal_pose.py)
 
 *In WSL, the above was saved in `~/ros2_scripts/`.*
 
 **Visual outputs**:
 
-![](../../media/navigation-after-setting-initial-and-goal-poses--1.png)
+![](../../media/navigation-after-setting-initial-pose-and-goal-pose--1.png)
 
-![](../../media/navigation-after-setting-initial-and-goal-poses--2.png)
+![](../../media/navigation-after-setting-initial-pose-and-goal-pose--2.png)
 
 ---
 
@@ -151,3 +152,15 @@ See [`set_initial_and_goal_poses.py`](../../scripts/interact-programmatically-wi
 Ensure the initial pose estimate is roughly where the robot is positioned.
 
 *Otherwise, robot may fail to localise and navigation would be erroneous.*
+
+## Setting initial pose and waypoints
+- Set initial pose estimate
+- Set waypoints
+
+---
+
+**Code**:
+
+See [`set_initial_pose_and_waypoints.py`](../../scripts/interact-programmatically-with-nav2/set_initial_pose_and_waypoints.py)
+
+*In WSL, the above was saved in `~/ros2_scripts/`.*

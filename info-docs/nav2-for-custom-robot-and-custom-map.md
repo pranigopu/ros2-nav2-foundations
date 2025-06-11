@@ -1,4 +1,4 @@
-<h1>NAV2 FOR CUSTOM ROBOT</h1>
+<h1>NAV2 FOR CUSTOM ROBOT AND CUSTOM MAP</h1>
 
 ---
 
@@ -152,6 +152,8 @@ Optional arguments:
 
 - `use_sim_time:=True` (if using simulation)
 - `map:=...` (if using generated map; replace `...` with path) <br> **NOTE**: _Reference the generated map's YAML file_
+
+**KEY POINT**: *Ensure the map path given in the YAML file matches the map path from the current working directory from which the launch is run. You can also ensure the map path given in the YAML file is an absolute path, to avoid issues that may arise with relative path.*
 
 ---
 

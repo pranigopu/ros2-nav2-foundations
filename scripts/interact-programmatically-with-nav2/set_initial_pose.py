@@ -2,7 +2,7 @@
 
 # NOTE: The above indicates a CLI command, indicating the following code must be run as an executable
 
-# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER: SET INITIAL POSE (I.E. INITIAL POSE ESTIMATE)
+# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER
 
 # Import rclpy, the canonical Python API for interacting with ROS 2:
 import rclpy # NOTE: rcl => "ROS Client Library"
@@ -40,6 +40,18 @@ nav.setInitialPose(initial_pose)
 nav.waitUntilNav2Active()
 
 #================================================
-# Shutdown
+# Shutdown:
+rclpy.shutdown()#!/usr/bin/env python3
 
+# NOTE: The above indicates a CLI command, indicating the following code must be run as an executable
+
+# TEST SCRIPT FOR NAV2 SIMPLE API COMMANDER
+
+# Import rclpy, the canonical Python API for interacting with ROS 2:
+import rclpy # NOTE: rcl => "ROS Client Library"
+# Import a class that defines a basic interface to Nav2 robot navigation:
+from nav2_simple_commander.robot_navigator import BasicNavigator
+
+rclpy.init()
+nav = BasicNavigator()
 rclpy.shutdown()
