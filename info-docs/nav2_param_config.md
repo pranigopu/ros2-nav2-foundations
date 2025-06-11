@@ -42,11 +42,11 @@ This will open the widget to handle dynamic reconfiguration of *running* plugins
 
 `rqt` `Parameter Reconfigure` widget after `nav2_bringup` is launched (1):
 
-![](../media/navigation-after-setting-initial-pose-and-goal-pose--1.png)
+![](../media/rqt-parameter-reconfigure-widget-after-nav2-bringup-launch--1.png)
 
 `rqt` `Parameter Reconfigure` widget after `nav2_bringup` is launched (2):
 
-![](../media/navigation-after-setting-initial-pose-and-goal-pose--2.png)
+![](../media/rqt-parameter-reconfigure-widget-after-nav2-bringup-launch--2.png)
 
 # Static configuration by editing parameter files
 We can access the parameters of the plugins of a particular package or node by accessing the relevant directory in the local installation of ROS 2. For example, for Nav2, the parameters are stored for the `nav2_bringup` node. The plugin configurations (including local and global costmaps, controller, planner and localiser) are stored in the following path:
