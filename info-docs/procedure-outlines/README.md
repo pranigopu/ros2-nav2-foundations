@@ -11,6 +11,8 @@ _Outlines of procedures for running/testing ROS 2 functionality_
 
 ---
 
+> **Key reference**: [_ROS 2 Nav2 [Navigation 2 Stack] - with SLAM and Navigation_, **udemy.com**](https://www.udemy.com/course/ros2-nav2-stack)
+
 # About
 There are 2 main classifications of the procedures given here:
 

@@ -163,21 +163,27 @@ Not doing this leads to the following exception when launching Turtlebot3 Gazebo
 **1. Add the custom world model in**:
 
 ```
-~/my_turtlebot3_workspace/src/turtlebot3_gazebo/worlds
+~/my_turtlebot3_workspace/src/turtlebot3_gazebo/worlds/
 ```
 
-**NOTE**: The world model is as follows:
+**NOTE 1**: The world model is as follows:
 
 - `.world` extension
 - Essentially an XML file
 - Any valid file name will do
+
+**NOTE 2**: Ensuring the above is recognised as an XML file:
+
+- Open the file's contents
+- Check if the XML version specification tag is present at the top <br> E.g.: `<?xml version "1.0"?>`
+- If not, add it; this ensures proper parsing within an IDE <br> *Helps with debugging, modification and code review*
 
 ---
 
 **2. Add world launch file in**:
 
 ```
-~/my_turtlebot3_workspace/src/turtlebot3_gazebo/launch
+~/my_turtlebot3_workspace/src/turtlebot3_gazebo/launch/
 ```
 
 **NOTE**: This launch file is as follows:

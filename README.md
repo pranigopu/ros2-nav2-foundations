@@ -14,6 +14,7 @@
   - [Nav2-related](#nav2-related)
   - [Procedure outlines](#procedure-outlines)
   - [Associated research](#associated-research)
+- [Additional resources](#additional-resources)
 
 ---
 
@@ -148,10 +149,11 @@ _Navigation needs a static map, no matter the mapping technique._
 ## Nav2-related
 - [Nav2 Stack Overview](./info-docs/nav2-stack-overview.md)
 - [Nav2 for Custom Robot and Custom Map](./info-docs/nav2-for-custom-robot-and-custom-map.md)
-- [Gazebo Simulation in Custom Environment Using Turtlebot3](./info-docs/gazebo-simulation-in-custom-environment-using-turtlebot3.md)
+- [Gazebo Simulation in Custom Environment Using Turtlebot3](./info-docs/gazebo-simulation-in-custom-environment_using_turtlebot3.md)
+- [Nav2 Map Definition](./info-docs/nav2-map-definition.md)
 - [Explore Nav2-Related Topics and Actions](./info-docs/nav2-related-topics-and-actions.md)
 - [Interact Programmatically with Nav2](./info-docs/interact-programmatically-with-nav2/)
-- [Nav2 Parameter Configuration](./info-docs/nav2_param_config.md)
+- [Nav2 Parameter Configuration](./info-docs/nav2-param-config.md)
 
 ## Procedure outlines
 - [Navigation Steps Using Turtlebot3 Nav2](./info-docs/procedure-outlines/navigation-steps-using-turtlebot3-nav2.pdf)
@@ -159,3 +161,7 @@ _Navigation needs a static map, no matter the mapping technique._
 
 ## Associated research
 [The Marathon 2: A Navigation System](./associated-research/the-marathon-2--a-navigation-system.md)
+
+# Additional resources
+- [*Robotics Back-End* (YouTube)](https://www.youtube.com/c/RoboticsBackEnd)
+- [**RoboticsBackend.com**](https://roboticsbackend.com/)
